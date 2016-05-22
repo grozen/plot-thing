@@ -1,6 +1,6 @@
 // DOM event helpers
 const Event = (ev, mod = x => x) =>
-	el => mod(el.events(ev));
+  el => mod(el.events(ev));
 
 // Input(DOM.select('.some-input'))
 const Input = Event('input', x => x.pluck('target', 'value'));
@@ -8,7 +8,7 @@ const Input = Event('input', x => x.pluck('target', 'value'));
 const Button = Event('click');
 
 export {
-	Event,
-	Input,
-	Button
+  Event,
+  Input,
+  Button
 }
