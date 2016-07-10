@@ -12,7 +12,7 @@ var watchify = require('watchify');
 
 // Custom browserify options
 var browserifyOptions = {
-  entries: ['./app/client/main.js'],
+  entries: ['./app/main.js'],
   debug: true
 };
 

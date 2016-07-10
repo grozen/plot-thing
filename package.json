@@ -17,9 +17,8 @@
     "url": "git+https://github.com/grozen/plot-thing.git"
   },
   "keywords": [
-    "hours",
-    "expense",
-    "report"
+    "plot",
+    "thing"
   ],
   "author": "Guy Rozen",
   "license": "MIT",
@@ -28,15 +27,16 @@
   },
   "homepage": "https://github.com/grozen/plot-thing.git#readme",
   "devDependencies": {
-    "babel-preset-es2015": "^6.3.13",
-    "babelify": "^7.2.0",
-    "browserify": "^12.0.1",
-    "gulp": "^3.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
     "gulp-sourcemaps": "^1.6.0",
-    "lodash.merge": "^3.3.2",
+    "lodash.merge": "^4.4.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.6.1"
+    "watchify": "^3.7.0"
   },
   "dependencies": {
     "@cycle/xstream-run": "^3.0.3",
