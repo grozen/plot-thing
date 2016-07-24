@@ -9,7 +9,7 @@
   "description": "A thing for plotting",
   "main": "app/main.js",
   "scripts": {
-    "build": "gulp bundle",
+    "build-client": "gulp bundle",
     "test": "gulp test"
   },
   "repository": {
@@ -39,6 +39,7 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
+    "@cycle/dom": "^11.0.1",
     "@cycle/xstream-run": "^3.0.3",
     "express": "^4.14.0",
     "pug": "^2.0.0-beta3",

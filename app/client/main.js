@@ -4,7 +4,7 @@ import {div, input, makeDOMDriver} from '@cycle/dom';
 
 function main(sources) {
   return {
-    DOM: xs.of(div(["Look at this divness"]))
+    DOM: xs.of(div(["Look at this divness!!!"]))
   }
 }
 
