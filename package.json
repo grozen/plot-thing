@@ -9,7 +9,7 @@
   "description": "A thing for plotting",
   "main": "app/main.js",
   "scripts": {
-    "build-client": "gulp bundle",
+    "build-client": "gulp build_client",
     "test": "gulp test"
   },
   "repository": {
@@ -42,6 +42,7 @@
     "@cycle/dom": "^11.0.1",
     "@cycle/xstream-run": "^3.0.3",
     "express": "^4.14.0",
+    "furtive": "^2.2.4",
     "pug": "^2.0.0-beta3",
     "xstream": "^5.1.4"
   }

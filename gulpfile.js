@@ -21,9 +21,19 @@ browserifyOptions = merge(browserifyOptions, watchify.args)
 var watcher = watchify(browserify(browserifyOptions));
 watcher.transform(babelify)
 
-gulp.task('bundle', bundle);
+gulp.task('build_client', build_client);
 watcher.on('update', bundle); // on any dependency update, runs the bundler
 watcher.on('log', gutil.log); // output build logs to terminal
+
+function build_client() {
+  bundle();
+  copy_vendor_files();
+}
+
+function copy_vendor_files() {
+  gulp.src('node_modules/furtive/css/furtive.min.css')
+    .pipe(gulp.dest('./dist'))
+}
 
 function bundle() {
   return watcher.bundle()
