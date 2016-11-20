@@ -27,7 +27,12 @@ watcher.on('log', gutil.log); // output build logs to terminal
 
 function build_client() {
   bundle();
+  copy_css();
   copy_vendor_files();
+}
+
+function copy_css() {
+  gulp.src('app/style/**/*').pipe(gulp.dest('./dist/stylesheets'))
 }
 
 function copy_vendor_files() {

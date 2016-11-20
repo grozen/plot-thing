@@ -1,13 +1,12 @@
 import xs from 'xstream';
 import {run} from '@cycle/xstream-run';
-import {div, input, makeDOMDriver} from '@cycle/dom';
+import {canvas, div, input, makeDOMDriver} from '@cycle/dom';
+import {makeCanvasDriver, rect} from 'cycle-canvas';
 
 function main(sources) {
-  return {
-    DOM: xs.of(div(["Look at this divness!!!"]))
-  }
 }
 
 run (main, {
-  DOM: makeDOMDriver('#app')
+  DOM: makeDOMDriver('#toolbar'),
+  Canvas: makeCanvasDriver('#draw-area')
 })

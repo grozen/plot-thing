@@ -2,8 +2,11 @@ html
   head
     title= "I am the title"
     link(rel='stylesheet' href='furtive.min.css')
+    link(rel='stylesheet' href='stylesheets/main.css')
   body
     h1.txt--center= "Plot thing"
     #app
+      canvas#draw-area
+      #toolbar
 
   script(src='bundle.js')
