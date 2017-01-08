@@ -1,7 +1,7 @@
 import xs from 'xstream';
 import {run} from '@cycle/xstream-run';
 import {canvas, div, input, makeDOMDriver} from '@cycle/dom';
-import {makeCanvasDriver, rect} from 'cycle-canvas';
+import {makeCanvasDriver} from 'cycle-canvas';
 
 const Tools = {
   circle: Symbol('circle')
